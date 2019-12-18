@@ -44,7 +44,9 @@
                             <li>{{$offre->description_de_poste}}</li>
                           </ul>
                           <small>Profil à cherché:{{$offre->profil_recherche}}</small>
+                          <small>Profil à cherché:{{$offre->id}}</small>
                           <hr>
+                          @include('form')
         
                         </div>
                       </div>

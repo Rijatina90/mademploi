@@ -36,4 +36,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Get the offre that owns the user.
+     */
+    public function offre()
+    {
+        return $this->belongsTo('App\Offre');
+    }
 }

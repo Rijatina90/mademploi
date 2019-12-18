@@ -22,4 +22,5 @@ Route::resource('offres', 'OffresController');
 
 //contact
 Route::get('contact', 'ContactController@create');
+Route::post('cadidat', 'CandidatController@store')->name('posttule');
 // Route::get('contact', 'ContactController@store');
